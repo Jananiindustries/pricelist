@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: rgb(58, 206, 247);
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav a {
+  color: #d26221;
+  margin: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.background {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.overlay {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+}
+.brand-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brand-section h2 {
+  font-size: 1.9em;
+  color: #fff700;
+  margin-bottom: 20px;
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.logos div {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 140px;
+}
+.logos img {
+  width: 100px;
+  height: auto;
+}
+.logos p a {
+  color: #567f27;
+  font-weight: bold;
+  text-decoration: none;
+}
+.logos p a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  .logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logos div {
+    margin-bottom: 20px;
+  }
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00d0ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.download-btn:hover {
+  background-color: #00b4e0;
+  color: #fff;
+}
+#contact p {
+  color: #fff;
+  line-height: 1.6;
+}
+.logos div {
+  /* existing styles... */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+.logos div:hover {
+  transform: scale(1.05);
+}
