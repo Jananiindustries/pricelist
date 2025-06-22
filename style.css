@@ -125,3 +125,18 @@ footer {
 .logos div:hover {
   transform: scale(1.05);
 }
+/* WhatsApp button specific style */
+.download-btn.whatsapp {
+  background-color: #25D366;
+  color: #fff;
+  border: none;
+}
+.download-btn.whatsapp:hover {
+  background-color: #1ebe5a;
+}
+
+/* Optional WhatsApp icon styling (if using font awesome) */
+.download-btn i {
+  margin-right: 8px;
+}
+
